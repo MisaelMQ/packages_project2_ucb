@@ -1,0 +1,5 @@
+<library path="lib/libcontroller_implemented">
+	<class name="controller_implemented/JointControllerImplemented"
+				 type="controller_implemented::JointControllerImplemented"
+				 base_class_type="controller_interface::ControllerBase" />
+</library>
