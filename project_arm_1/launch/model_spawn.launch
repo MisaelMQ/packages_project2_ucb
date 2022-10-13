@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- My Package launch file -->   
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="true"/>
+  </include>
+
+  <!-- USE: roslaunch my_mira_description urdf_visualize.launch model:='$(find myrobot_package)/urdf/myrobot.urdf' -->
+  <param name="robot_description" command="cat '$(find project_arm_1)/urdf/project_arm_1.xacro'"/>
+  
+  <!-- Node to Spawn Robot-->
+  <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-urdf -model arm_robot_1 -param robot_description -z 0.0"/>
+
+</launch>
