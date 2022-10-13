@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- My Package launch file -->   
+    <include file="$(find project_arm_1)/launch/model_spawn.launch"></include>
+    <include file="$(find control_arm_robot_1)/launch/control_spawn.launch"></include>
+
+</launch>
+

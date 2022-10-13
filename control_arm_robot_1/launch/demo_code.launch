@@ -1,0 +1,5 @@
+<launch>
+    <!-- My Package launch file -->
+    <node pkg="control_arm_robot_1" type="code.py" name="project2_test"  output="screen">
+    </node>
+</launch>
